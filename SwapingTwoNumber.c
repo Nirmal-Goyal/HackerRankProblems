@@ -14,9 +14,16 @@ int main() {
     */
 
     // swaping of number without using third variable
+    /*
     a = a+b;
     b = a-b;
     a = a-b;
+    */
+
+    // swaping of two numbers using Bitwise Operator
+    a=a^b;
+    b=a^b;
+    a=a^b;
     
     printf("numbres after swap: %d %d", a, b);
     return 0;
