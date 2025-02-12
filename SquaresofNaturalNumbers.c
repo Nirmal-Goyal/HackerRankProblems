@@ -3,9 +3,10 @@
 
 int main() {
 
-    int n;
-    scanf("%d", &n);
-    for(int i=1; i<=n; i++){
+    int N;
+    printf("enter the last number: ");
+    scanf("%d", &N);
+    for(int i=1; i<=N; i++){
         printf("%d ", i*i);
     }
     return 0;
