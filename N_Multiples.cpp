@@ -4,10 +4,13 @@
 int main() {
 
     int n, x;
-    scanf("%d %d", &n, &x);
+    printf("enter how many multiples you want: ");
+    scanf("%d", &n);
+    printf("enter the number: ");
+    scanf("%d", &x);
     for(int i=1; i<=n; i++){
-        int a=i*x;
-        printf("%d ", a);
+        int mul=i*x;
+        printf("%d ", mul);
     }
 
     return 0;
