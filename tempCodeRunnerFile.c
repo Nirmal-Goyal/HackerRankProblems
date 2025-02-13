@@ -1,1 +1,1 @@
-goto here;
+first n multiples of x
