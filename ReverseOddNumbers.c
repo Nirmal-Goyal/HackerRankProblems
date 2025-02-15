@@ -7,9 +7,17 @@ int main() {
     printf("enter the last num: ");
     scanf("%d", &n);
     
-    for(int i=n; i>=1; i-=2){
-        int a=i;
-        printf("%d ", a);
+    for(int i=n; i>=1; ){
+        if(i%2==1){
+            int a=i;
+            printf("%d ", a);
+            i-=2;
+        }
+        else{
+            --i;
+        }
+        
+        
     }
     
     return 0;
