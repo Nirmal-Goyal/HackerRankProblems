@@ -11,6 +11,7 @@
 int main() {
 
     int n;
+    printf("enter the num of rows: ");
     scanf("%d", &n);
     int num = 1;
     for(int i=1; i<=n; i++){
