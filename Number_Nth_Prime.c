@@ -4,6 +4,7 @@
 int main() {
 
     int n;
+    printf("enter the nth value: ");
     scanf("%d", &n);
     int count=0;
     int num=2;
@@ -20,7 +21,7 @@ int main() {
             count++;
         }
         if(count==n){
-            printf("%d", num);
+            printf("Nth prime is: %d", num);
             break;
         }
         num++;
