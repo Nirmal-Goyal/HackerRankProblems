@@ -1,8 +1,10 @@
+// convert decimal number into binary
 #include <stdio.h>
 
 int main() {
 
     int n; 
+    printf("enter the num: ");
     scanf("%d", &n);
     int initial = n;
     int num=0;
