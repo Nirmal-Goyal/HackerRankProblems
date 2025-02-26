@@ -2,6 +2,7 @@
 #include<stdio.h>
 int main(){
     int n;
+    printf("enter the decimal num: ");
     scanf("%d", &n);
     int ans=0;
     int mul=1;
@@ -11,5 +12,5 @@ int main(){
         mul*=10;
         n/=8;
     }
-    printf("%d", ans);
+    printf("octal num is: %d", ans);
 }
