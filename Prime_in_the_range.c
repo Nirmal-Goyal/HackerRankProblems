@@ -4,8 +4,12 @@
 int main() {
 
     int l, r;
-    scanf("%d %d", &l, &r);
+    printf("enter the initial range: ");
+    scanf("%d", &l);
+    printf("enter the rightmost range: ");
+    scanf("%d", &r);
     
+    printf("prime num in range are: ");
     for(int i=l; i<=r; i++){
         if(i<2){
             continue;
