@@ -4,16 +4,17 @@
 int main() {
 
     int n;
+    printf("enter the num: ");
     scanf("%d", &n);
     
     int a=0, b=0;
     
     if(n<=2){
-        printf("2");
+        printf("nearest prime is: 2");
         return 0;
     }
     
-    
+    // checking nearest lower prime num
     for(int i=n; i>=2; i--){
         int prime=1;
         int j=2;
@@ -32,6 +33,8 @@ int main() {
         }
     }
     
+
+    // checking nearest higher prime num
     for(int i=n+1; b==0; i++){
         int prime=1;
         int j=2;
@@ -49,12 +52,13 @@ int main() {
             break;
         }
     }   
-        
+       
+    // checking which one is more nearest higher or lower
     if((n-a)<=(b-n)){
-        printf("%d", a);
+        printf("nearest prime num is: %d", a);
     }
     else{
-        printf("%d", b);
+        printf("nearest prime num is: %d", b);
     }
     
     return 0;
