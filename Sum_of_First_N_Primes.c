@@ -4,6 +4,7 @@
 int main() {
 
     int n;
+    printf("enter how many primes you want: ");
     scanf("%d", &n);
     int count=0;
     int num=2;
@@ -22,7 +23,7 @@ int main() {
             sum = sum+num;
         }
         if(count==n){
-            printf("%d", sum);
+            printf("sum of first Nth prime is: %d", sum);
             break;
         }
         num++;
