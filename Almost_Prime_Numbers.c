@@ -7,7 +7,9 @@ Given an integer N, count how many numbers from 1 to N (inclusive) are almost pr
 
 int main() {
     int n;
-    scanf("%d", &n);    
+    printf("enter the last integer n: ");
+    scanf("%d", &n);   
+    // initial count of almost prime numbers is 0
     int num=0;
     
     if(n<4){
@@ -31,7 +33,7 @@ int main() {
             num = num+1;
         }       
     }
-    printf("%d", num);
+    printf("total count of almost prime numbers is: %d", num);
     
     return 0;
 }
