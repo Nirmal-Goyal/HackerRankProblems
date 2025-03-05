@@ -4,6 +4,7 @@
 int main() {
 
     long long n;
+    printf("enter the integer: ");
     scanf("%lld", &n);
     if(n==1){
         printf("1");
@@ -19,10 +20,10 @@ int main() {
         }
     }
     if(n==1){
-        printf("%d", i-1);
+        printf("integer is factorial of: %d", i-1);
     }
     else{
-        printf("NO");
+        printf("NO, integer is not a factorial of any number");
     }
     return 0;
 }
