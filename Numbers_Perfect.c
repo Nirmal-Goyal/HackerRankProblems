@@ -3,6 +3,7 @@
 
 int main() {
     int n;
+    printf("enter the num: ");
     scanf("%d", &n);
     int sum=0;
     
@@ -15,10 +16,10 @@ int main() {
         
     }
     if(sum==n){
-        printf("YES");
+        printf("YES, num is perfect number");
     }
     else{
-        printf("NO");
+        printf("NO, num is not a perfect number");
     }
     return 0;
 }
