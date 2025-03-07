@@ -4,6 +4,7 @@
 int main() {
 
     long long n;
+    printf("enter the num: ");
     scanf("%lld", &n);
     int count=0;
     
@@ -17,6 +18,6 @@ int main() {
         }
         n=n/10;
     }
-    printf("%d", count);
+    printf("count of prime digits in num: %d", count);
     return 0;
 }
