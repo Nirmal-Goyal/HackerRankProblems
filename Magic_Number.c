@@ -4,6 +4,7 @@
 int main() {
 
     int n;
+    printf("enter the num: ");
     scanf("%d", &n);
     int original=n;
     
