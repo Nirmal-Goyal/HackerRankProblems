@@ -3,10 +3,10 @@ N is a prime number.
 The sum of its digits is also a prime number. */
 
 #include <stdio.h>
-
 int main() {
 
     int n;
+    printf("enter the num: ");
     scanf("%d", &n);
     int sum=0;
     
@@ -28,17 +28,17 @@ int main() {
     }
     
     int prime2=1;
-    for(int j=2; j*j<=sum; j++){
-        if(sum%j==0){
+    for(int i=2; i*i<=sum; i++){
+        if(sum%i==0){
             prime2=0;
         }
     }
     
     if(prime1==1 && prime2==1){
-        printf("YES");
+        printf("YES, number is supreme prime");
     }
     else{
-        printf("NO");
+        printf("NO, number is not supreme prime");
     }
         
     return 0;
