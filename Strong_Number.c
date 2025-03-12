@@ -1,9 +1,9 @@
 // A number is called a Strong number if the sum of the factorials of its digits is equal to the number itself
 #include <stdio.h>
-
 int main() {
 
     int n;
+    printf("enter the num: ");
     scanf("%d", &n);
     int sum=0;
     int original=n;
@@ -19,10 +19,10 @@ int main() {
         n=n/10;
     }
     if(sum==original){
-        printf("YES");
+        printf("YES, number is strong number");
     }
     else{
-        printf("NO");
+        printf("NO, number is not strong num");
     }
     return 0;
 }
