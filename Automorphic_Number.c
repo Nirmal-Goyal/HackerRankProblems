@@ -1,36 +1,28 @@
 // An Automorphic Number is a number whose square ends with the same digits as the number itself.
 #include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
-
 int main() {
 
     int n;
+    printf("enter the num: ");
     scanf("%d", &n);
     int count=0;
-    int original=n;
     
     int a=n;
+    int x=1;
     while(a>0){
         ++count;
+        x=x*10;
         a=a/10;
     }
     
     int square = n*n;
-    
-    int x=1;
-    for(int i=1; i<=count; i++){
-        x = x*10;
-    }
-    
     int last = square%x;
     
-    if(last==original){
-        printf("%d is automorphic", original);
+    if(last==n){
+        printf("%d is automorphic", n);
     }
     else{
-        printf("%d is not automorphic", original);
+        printf("%d is not automorphic", n);
     }
     return 0;
 }
