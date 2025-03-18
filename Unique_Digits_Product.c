@@ -2,7 +2,9 @@
 #include<stdio.h>
 int main() {
     int n;
+    printf("enter the num: ");
     scanf("%d", &n);
+    // storing the frequency of digits in number
     int frequency[10]={0};
     int product=1;
     while(n>0){
@@ -13,6 +15,6 @@ int main() {
         }
         n/=10;
     }
-    printf("%d", product);
+    printf("product of unique digits are: %d", product);
     return 0;
 }
