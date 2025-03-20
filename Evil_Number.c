@@ -10,6 +10,7 @@ int is_evil_number(int n) {
         }
         n=n/2;
     }
+    // return 1, if number is evil otherwise 0
     if(count%2==0){
         return 1;
     }
@@ -20,6 +21,7 @@ int is_evil_number(int n) {
 
 int main() {
     int n;
+    printf("enter the num: ");
     scanf("%d", &n); 
     printf("%d\n", is_evil_number(n));
     return 0;
