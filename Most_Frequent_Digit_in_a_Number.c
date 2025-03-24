@@ -14,7 +14,7 @@ int main(){
     }
     
     int max = frequency[0];
-    int index=-1;
+    int index=0;
     for(int i=0; i<10; i++){
         if((frequency[i]>max) || (frequency[i]==max && i>index)){
             max = frequency[i];
